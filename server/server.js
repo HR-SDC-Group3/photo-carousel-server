@@ -10,8 +10,9 @@
 // app.use('/restaurants/:id', express.static('client/dist/'));
 // app.use(cors());
 
-// app.get('/api/restaurants/:id/photos', (req, res) => {
-//   const restaurantID = req.params.id;
+
+app.get('/api/restaurants/:id/', (req, res) => {
+  const restaurantId = req.params.id;
 
 //   db.find(restaurantID, (err, response) => {
 //     if (err) {
