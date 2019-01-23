@@ -57,7 +57,7 @@
   position: relative;
   min-width: 300px;
   justify-self: center;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16) 0 3px 6px rgba(0,0,0,0.23)
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16) 0 3px 6px rgba(0,0,0,0.23);
 }
 
 /* --------------------  NAV BAR STYLING  --------------------  */
@@ -164,7 +164,7 @@ table {
 }
 
 #prev-btn {
-  font-size: 20px
+  font-size: 20px;
 }
 
 #next-btn {

@@ -29,14 +29,14 @@ class RestaurantPhotos extends React.Component {
   openModal() {
     const { photos } = this.props
     let modalImage = event.target.src;
-    let photosArray = photos[0].userPhotos;
+    let photosArray = photos[0].phototags;
 
     const currentIndex = _.findIndex(photosArray, (photo) => {
-      return photo.photoThumbnail === modalImage;
+      return photo.photoURL === modalImage;
     });
 
-    modalImage = modalImage.replace('thumbnails', 'large_photos');
-    modalImage = modalImage.replace('_small', '_large');
+    // modalImage = modalImage.replace('thumbnails', 'large_photos');
+    // modalImage = modalImage.replace('_small', '_large');
 
     this.setState({
       showModal: true,
@@ -104,6 +104,5 @@ class RestaurantPhotos extends React.Component {
     }
   }
 }
-
 
 export default RestaurantPhotos;

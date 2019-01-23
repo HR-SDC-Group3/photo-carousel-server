@@ -22,5 +22,8 @@ coverage
 
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
-dist/
-
+dist/bundle.js
+database/generated_data
+database/postgres_data/
+database/config.js
+.env

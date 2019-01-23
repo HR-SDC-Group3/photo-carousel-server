@@ -15,6 +15,7 @@ class Carousel extends React.Component {
   getPhotos(id) {
     axios.get(`/api/restaurants/${id}/photos`)
       .then((response) => {
+        console.log("client", response)
         this.setState((currentState) => {
           return {
             restaurantPhotos: response.data,
@@ -29,6 +30,7 @@ class Carousel extends React.Component {
 
   componentDidMount() {
     const id = window.location.pathname.split('/')[2];
+    
     this.getPhotos(id);
   }
 
