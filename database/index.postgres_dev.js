@@ -7,6 +7,7 @@ const config = require('./config.js');
 var conString = "postgres://lindentree:margarita@localhost:5432/lindentree";
 var db = pgp(conString);
 // let db = pgp(config);
+
 //get all photos route 
 
 //var altQuery = `SELECT phototags FROM restaurants WHERE ID = ${restaurantID}`
@@ -17,14 +18,6 @@ const getRestaurantInfo = (restaurantID, callback) => {
    .then((results) => callback(null, results))
    .catch(err => callback(err));
 }
-
-// const getRestaurantInfo = (restaurantID, callback) => {
-//   //let id = restaurantID.toString()
-//   console.log("query", restaurantID)
-//   db.query(`SELECT * FROM restaurants WHERE ID = ${restaurantID}`)
-//    .then((results) => callback(null, results))
-//    .catch(err => callback(err));
-// }
 
 //update restaurant photos route 
 //need to pull old info and compare against new input
