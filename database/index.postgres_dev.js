@@ -3,23 +3,10 @@ const pgp = require('pg-promise')();
 
 
 const config = require('./config.js');
-//const db = pgp('postgres://postgres:merrick@localhost:5432/sdc?');
 
-//var connectionString = 'postgres:merrick//localhost:5432/sdc';
 var conString = "postgres://lindentree:margarita@localhost:5432/lindentree";
 var db = pgp(conString);
-//postgres://user:postgres@host:5432/sdc?ssl=true
-
-//postgresql://localhost/sdc?user=postgres&password=merrick
-// var client2 = new Client()
-// client2.connect('postgresql://postgres:merrick@localhost:5432/sdc', function(err) {
-//   if(err) throw err
-  
-//   console.log('connected with connection string!')
-// })
-
-//await client.connect();
-
+// let db = pgp(config);
 //get all photos route 
 
 //var altQuery = `SELECT phototags FROM restaurants WHERE ID = ${restaurantID}`

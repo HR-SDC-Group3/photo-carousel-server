@@ -15,7 +15,9 @@ class Carousel extends React.Component {
   getPhotos(id) {
     axios.get(`/api/restaurants/${id}/photos`)
       .then((response) => {
-        console.log("client", response)
+        if (response.data.length === 0) {
+          console.log('Restaurant not found');
+        }
         this.setState((currentState) => {
           return {
             restaurantPhotos: response.data,

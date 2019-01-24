@@ -4,7 +4,7 @@ import { sleep } from "k6";
 const generateRandomNumber = function (min, max) {
     
    let random_number = Math.random() * (max-min) + min;
-    return Math.floor(random_number);
+     return Math.floor(random_number);
 }
 
 export default function() {
